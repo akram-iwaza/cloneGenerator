@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body></body>
+  <script>
+    window.KPSDK = {
+      now:
+        typeof performance !== "undefined" && performance.now
+          ? performance.now.bind(performance)
+          : Date.now.bind(Date),
+    };
+
+    window.KPSDK.start = KPSDK.now();
+  </script>
+</html>
